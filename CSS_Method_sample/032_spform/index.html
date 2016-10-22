@@ -1,0 +1,83 @@
+<!doctype html>
+<html dir="ltr" lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>うさぎ幼稚園</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="header">
+		<h1 class="site-title">うさぎ幼稚園<span>Usagi Kindergarten</span></h1>
+	</div>
+	<div class="contents">
+		<h2 class="page-title">体験入園お申し込み</h2>
+		<p>うさぎ幼稚園への体験入園のお申し込みはお電話でも受け付けております。<a href="tel:0120-123-4567">0120-123-4567</a>までお気軽にお電話ください。</p>
+
+		<!-- ここからフォーム -->
+		<form action="" class="formBox">
+		<!-- テキストボックス -->
+				<h3><label for="name">お名前(保護者の方)</label></h3>
+				<input type="text" name="name" id="name">
+				<h3><label for="kidsName">お名前(お子様)</label></h3>
+				<input type="text" name="kidsName" id="kidsName">
+				<h3><label for="mail">メールアドレス</label></h3>
+				<input type="email" name="mail" id="mail">
+				<h3><label for="phoneNumber">お電話番号</label></h3>
+				<input type="tel" id="phoneNumber" name="phoneNumber">
+
+		<!-- ラジオボタン -->
+				<h3>お子様の性別</h3>
+				<input type="radio" value="男の子" name="gender" id="boy">
+				<label for="boy" onclick="">男の子</label>
+				<input type="radio" value="女の子" name="gender" id="girl">
+				<label for="girl" onclick="">女の子</label>
+
+		<!-- チェックボックス -->
+				<h3>同伴の方をお選びください(複数選択可)	</h3>	
+				<ul class="companion">
+				<li>
+					<input type="checkbox" value="祖父" name="companion" id="grandFather">
+					<label for="grandFather" onclick="">祖父</label>
+				</li>
+				<li>
+					<input type="checkbox" value="祖母" name="companion" id="grandMother">
+					<label for="grandMother" onclick="">祖母</label>
+				</li>
+				<li>
+					<input type="checkbox" value="父" name="companion" id="father">
+					<label for="father" onclick="">父</label>
+				</li>
+				<li>
+					<input type="checkbox" value="母" name="companion" id="mother">
+					<label for="mother" onclick="">母</label>
+				</li>
+				<li>
+					<input type="checkbox" value="ご兄弟" name="companion" id="brother">
+					<label for="brother" onclick="">ご兄弟</label>
+				</li>
+				</ul>
+
+		<!-- セレクトボックス -->
+				<h3><label for="type">お子様の現在の状況について</label></h3>
+				<select name="type" id="type">
+					<option value="">選択してください</option>
+					<option value="保育園に通っている">保育園に通っている</option>
+					<option value="別の幼稚園に通っている">別の幼稚園に通っている</option>
+					<option value="その他">その他</option>
+				</select>
+
+		<!-- 日付入力 -->
+				<h3>お子様の生年月日</h3>
+				<input type="date" name="birthDate">
+				<h3><label for="query">ご質問など</h3>
+
+		<!-- テキストエリア -->
+				<textarea name="query" id="query" cols="30" rows="10"></textarea>
+
+		<!-- 送信ボタン -->
+			<input type="submit" value="送信する" name="submit">
+		</form>
+	</div>
+</body>
+</html>

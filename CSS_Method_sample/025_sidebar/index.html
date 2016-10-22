@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サイドメニューサンプル</title>
+
+<!-- サンプルページのスタイルシート -->
+<link rel="stylesheet" href="./css/style.css">
+
+<!-- sidrのスタイルシート(light) -->
+<link rel="stylesheet" href="./css/jquery.sidr.light_touch.css">
+
+</head>
+<body>
+
+<div id="wrapper">
+
+<div id="mobile-header">
+    <a id="responsive-menu-button" href="#sidr-main">menu</a>
+</div>
+ 
+<div id="navigation">
+    <div class="nav">
+        <ul>
+            <li><a href="#">Menu01</a></li>
+            <li><a href="#">Menu02</a></li>
+            <li><a href="#">Menu03</a></li>
+            <li><a href="#">Menu04</a></li>
+            <li><a href="#">Menu05</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="main">
+    <h1 class="page-title">SAMPLE CONTENTS</h1>
+    <div class="contents-item">
+        <h2 class="contents-title">CONTENTS SAMPLE</h2>
+        <p class="contents-image"><img src="img/image_01.jpg" height="142" width="436" alt=""></p>
+    </div>
+    <div class="contents-item">
+        <h2 class="contents-title">CONTENTS SAMPLE</h2>
+        <p class="contents-image"><img src="img/image_02.jpg" height="142" width="436" alt=""></p>
+    </div>
+    <div class="contents-item">
+        <h2 class="contents-title">CONTENTS SAMPLE</h2>
+        <p class="contents-image"><img src="img/image_03.jpg" height="142" width="436" alt=""></p>
+    </div>
+</div>
+
+</div>
+
+
+    <!-- JavaScript -->
+
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <!-- Sidrの読み込み -->
+    <script src="./js/jquery.sidr.min.js"></script>
+
+    <script>
+    $(function(){
+        // Sidrの起動
+        $('#responsive-menu-button').sidr({
+            name: 'sidr-main',
+            source: '#navigation'
+        });
+    });
+    </script>
+
+</body>
+</html>

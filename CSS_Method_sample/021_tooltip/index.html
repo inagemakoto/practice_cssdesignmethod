@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>吹き出しのツールチップ</title>
+<link href="css/html5reset-1.6.1.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/jquery.powertip.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.powertip-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.jrumble.1.3.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<div id="header">
+<h1><img src="images/logo.gif" alt="My WebSite!!" width="155" height="18"></h1>
+<div class="nav">
+<ul>
+<li><a href="#"><img src="images/nav01.gif" alt="" width="46" height="10" title="このサイトについて"></a></li>
+<li><a href="#"><img src="images/nav02.gif" alt="" width="46" height="10" title="素材集はこちら"></a></li>
+<li><a href="#"><img src="images/nav03.gif" alt="" width="46" height="10" title="素材を購入する"></a></li>
+<li><a href="#"><img src="images/nav04.gif" alt="" width="46" height="10" title="ログインする"></a></li>
+</ul>
+</div>
+</div>
+
+<div id="contents">
+
+<div id="sidebar">
+<ul>
+<li><a href="#"><img src="images/menu01.gif" alt="" width="80" height="80" title="マイページ"></a></li>
+<li><a href="#"><img src="images/menu02.gif" alt="" width="80" height="80" title="買い物カゴ"></a></li>
+<li><a href="#"><img src="images/menu03.gif" alt="" width="80" height="80" title="カテゴリーで見る"></a></li>
+<li><a href="#"><img src="images/menu04.gif" alt="" width="80" height="80" title="お気に入り"></a></li>
+</ul>
+<ul>
+<li><a href="#"><img src="images/menu05.gif" alt="" width="80" height="80" title="検索する"></a></li>
+<li><a href="#"><img src="images/menu06.gif" alt="" width="80" height="80" title="人気ランキングを見る"></a></li>
+</ul>
+</div>
+
+<div id="picture">
+<ul>
+<li><a href="#"><img src="images/img01.png" alt="" width="273" height="273" title="赤ちゃん（男）<br>素材：68点"></a></li>
+<li><a href="#"><img src="images/img02.png" alt="" width="273" height="273" title="お姉さん<br>素材：34点"></a></li>
+<li><a href="#"><img src="images/img03.png" alt="" width="273" height="273" title="赤ちゃん（女）<br>素材：51点"></a></li>
+<li><a href="#"><img src="images/img04.png" alt="" width="273" height="273" title="男の子<br>素材：33点"></a></li>
+<li class="sale"><a href="#"><img src="images/img05.png" alt="" width="273" height="273" title="お兄さん<br>素材：61点"></a></li>
+<li class="sale"><a href="#"><img src="images/img06.png" alt="" width="273" height="273" title="女の子<br>素材：64点"></a></li>
+<li><a href="#"><img src="images/img07.png" alt="" width="273" height="273" title="学生（男）<br>素材：34点"></a></li>
+<li><a href="#"><img src="images/img08.png" alt="" width="273" height="273" title="お父さん<br>素材：13点"></a></li>
+<li><a href="#"><img src="images/img09.png" alt="" width="273" height="273" title="学生（女）<br>素材：29点"></a></li>
+</ul>
+</div>
+
+</div><!-- #contents -->
+
+<div id="footer">
+<p>Copyright &copy; Yukitomo Nishikiori. All rights reserved.</p>
+</div>
+
+<script type="text/javascript">
+/* powertip */
+$(function(){
+	$('#header img').powerTip({ placement:'n' });
+	$('#sidebar img').powerTip({ placement:'e' });
+	$('#picture img').powerTip({ placement:'s' });
+});
+/* jrumble */
+$(function(){
+	$('#picture img').jrumble({
+		x: 0,
+		y: 1,
+		rotation: 0,
+		speed:100
+	});
+	$('#picture img').trigger('startRumble');
+});
+</script>
+</body>
+</html>

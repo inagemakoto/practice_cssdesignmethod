@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>カルーセル（コンテンツスライダー）サンプル</title>
+
+<!-- サンプルページのスタイルシート -->
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+<h1>カルーセルサンプル</h1>
+
+<div class="slider-area">
+
+	<div class="scrollable" id="scrollable">
+
+		<div class="items">
+
+			<div class="item">
+			<p class="photo">
+				<img src="img/photo01.jpg" height="390" width="700" alt="">
+			</p>
+			<p class="comment">コメント1</p>
+			</div>
+
+			<div class="item">
+			<p class="photo">
+				<img src="img/photo02.jpg" height="390" width="700" alt="">
+			</p>
+			<p class="comment">コメント2</p>
+			</div>
+
+			<div class="item">
+			<p class="photo">
+				<img src="img/photo03.jpg" height="390" width="700" alt="">
+			</p>
+			<p class="comment">コメント3</p>
+			</div>
+
+			<div class="item">
+			<p class="photo">
+				<img src="img/photo04.jpg" height="390" width="700" alt="">
+			</p>
+			<p class="comment">コメント4</p>
+			</div>
+
+		</div>
+
+	</div>
+
+	<a class="prev browse left"></a>
+
+	<a class="next browse right"></a>
+
+	<div class="navi"></div>
+
+</div>
+
+<div class="footer"><address>with: jQuery Tools</address></div>
+
+	<!-- JavaScript -->
+
+	<!-- jQueryの読み込み -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+	<!-- jQueryToolsの読み込み -->
+	<script src="./js/jquery.tools.min.js"></script>
+
+	<script>
+	$(function(){
+		$("#scrollable").scrollable().navigator();
+	});
+	</script>
+
+</body>
+</html>

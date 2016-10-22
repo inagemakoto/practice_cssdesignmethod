@@ -1,0 +1,211 @@
+body{  
+	margin: 0;  
+	line-height: 150%; 
+	background: #f2eadf url(../img/bg_main.jpg);
+	color:#543939;
+	font-family: "メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+	font-size:90%;
+}
+
+a {
+	text-decoration: none;
+	color:#543939;
+}
+
+img {
+	border:none;
+}
+
+h1 {
+	padding:0;
+	margin:0;
+}
+ul {
+	padding:0;
+	margin:0;
+	list-style: none;	
+}
+
+
+h1 a {
+	width:335px;
+	height:63px;
+	display: block;
+	background: url(../img/logo.png) no-repeat;
+	margin:0;
+}
+
+h2 {
+	border-left: 8px solid #C1272D;
+	padding-left:15px;
+	line-height: 180%;
+}
+
+/* ヘッダーエリア */
+div#header {  
+	width: 100%;  
+	height: 63px;  
+	padding:15px 0;  
+	background-color: #fff; 
+	color: #fff; 
+	border-top:5px solid #006835;
+	border-bottom:5px solid #F5BC00;
+}
+
+div#header_in {
+	width: 980px;
+	position: relative;
+	margin:0 auto;
+}
+
+div#header_in ul {
+	margin:0 0 0 350px;
+	background:url(../img/bg_main.jpg);
+	padding:8px;
+	position:absolute;
+	top:5px;
+	right:0px;
+	line-height: 0;
+}
+div#header_in ul li {
+	float:left;
+	margin-right:20px;
+}
+div#header_in ul li:last-child {
+	margin:0;
+}
+
+/* フッターエリア */
+div#footer {  
+	width: 100%;  
+	height: 40px;  
+	padding:0 0 15px;
+	background-color: #07913A;  
+	border-top:5px solid #006835;
+	color: #ffffff;
+	text-align:center;
+
+}
+
+/* コンテンツエリア */
+div#contents{
+	padding: 20px 0;
+	margin: 0 auto ;
+	width: 980px;
+	_zoom: 1;  
+    overflow: hidden; 	
+}
+
+/* コンテンツエリア左カラム　：　メインコンテンツ */
+div#main {
+	width: 647px;
+	float: left;
+	background: #FFF;
+	padding:10px 40px;
+	box-shadow: 0 0 18px -8px #66666F;
+	position: relative;
+}
+/* コンテンツエリア右カラム　：　サイドナビ*/
+div#side {
+	width: 230px;
+	float: right;
+	background: #95684D;
+	box-shadow: 0 0 18px -8px #66666F;
+	padding-bottom:5px;
+}
+
+/* 社労士イメージ */
+div#img {
+	position: absolute;
+	top:15px;
+	right:15px;
+	width:256px;
+}
+
+/* よくある質問と回答：文章 */
+div#desc {
+	width:360px;
+	min-height: 168px;
+}
+
+/* お問い合わせフォームへのリンク */
+p.inquiry a {
+	font-weight: bold;
+	background: url(../img/arrow01.png) no-repeat left center;
+	padding-left:24px;
+}
+
+/* サイドナビ　：　メニュー部分 */
+ul#navi li p {
+	width: 200px;
+	height:31px;
+	background: #fff url(../img/arrow01.png) no-repeat left center;
+	background-position:5px;
+	border-bottom:1px dotted #95684D;
+	padding: 13px 0 0 30px;
+	margin:0;
+	font-size: 75%;
+	cursor: pointer;
+}
+div#side strong {
+	font-size: 120%;
+}
+
+/* サイドナビ　：　メニュー部分選択時 */
+ul#navi li p.active {
+	background: #E2E9EB url(../img/arrow02.png) no-repeat left center;
+	background-position:5px;
+}
+
+/* サイドナビ　：　サブメニュー部分 */
+ul#navi li ul li a  {
+	display: block;
+	width: 200px;
+	height:31px;
+	background: #fafaf2 url(../img/arrow03.png) no-repeat left center;
+	background-position:15px;
+	border-bottom:1px dotted #95684D;
+	padding: 13px 0 0 36px;
+}
+
+/* よくある質問と回答リスト */
+dl#faq {
+	border:5px solid #ccc;
+	padding:0 20px;
+	margin-bottom:30px;
+}
+
+/* よくある質問と回答リスト　：　質問リスト部分 */
+dl#faq dt h3 {
+	background: url(../img/icon_q.png) no-repeat left center;
+	font-weight: bold;
+    border-bottom: 1px dotted #90392C;
+    font-size: 120%;
+    height: 26px;
+    margin-bottom: 10px;
+    padding: 12px 0 6px 36px;
+    cursor:pointer;
+}
+
+/* よくある質問と回答リスト　：　質問リスト部分のhover時 */
+dl#faq dt:hover h3 {
+	color:#990000;
+}
+
+/* よくある質問と回答リスト　：　回答部分 */
+dl#faq dd  {
+	margin: 0 0 20px 0;
+	background: url(../img/icon_a.png) no-repeat scroll left top;
+    padding: 0 0 0 36px;
+}
+
+.hidden {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

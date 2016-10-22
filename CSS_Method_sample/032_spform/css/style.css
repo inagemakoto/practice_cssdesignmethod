@@ -1,0 +1,246 @@
+/*----- Webフォント読み込み -----*/
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+
+/*----- リセット -----*/
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6, p,
+a, dl, dt, dd, ol, ul, li,
+form, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a img {
+  border: none;
+}
+
+/*--------------------------------------------------
+ *共通項目*
+ -------------------------------------------------*/
+a {
+  text-decoration: none;
+  color: #00bfff;
+}
+a:hover {
+  color: #00d4ff;
+  text-decoration: underline;
+}
+
+a:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4em;
+  color: #333;
+  font-family: 'Helvetica Neue', Helvetica, Droid, Arial, Verdana, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN';
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  background: url(../images/bg_header.png) no-repeat 50% 0;
+}
+
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+.center {
+  text-align: center;
+}
+
+/*--------------------------------------------------
+ *ページスタイリング*
+ -------------------------------------------------*/
+
+.header {
+  padding-top: 40px;
+}
+
+.site-title {
+  text-align: center;
+  font-size: 2em;
+}
+.site-title span {
+  display: block;
+  font-size: .6em;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  background-color: #3cb371;
+  color: #FFF;
+  padding: 10px 0;
+  width: auto;
+  margin: 10px auto;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+
+.contents {
+  width: 90%;
+  margin: 10px auto;
+}
+.contents p {
+  margin: 20px auto;
+}
+
+.formBox h3 {
+  margin: 20px 0 10px;
+  background: url(../images/bg_headline.png) no-repeat 0 50%;
+  font-size: 1em;
+  padding: 5px 10px 5px 24px;
+  border-bottom: dashed 1px #ccc;
+  font-weight: bold;
+}
+
+/*--------------------------------------------------
+ *フォームパーツ*
+ -------------------------------------------------*/
+
+/*----- テキストボックス・テキストエリア -----*/
+input[type=text], input[type=email], input[type=tel], textarea {
+  font-size: 100%;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  width: 90%;
+  -webkit-appearance: none;
+  border: 3px solid #E5E5E5;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+  height: 40px;
+}
+
+input:focus, textarea:focus {
+  background-color: #f0f8ff;
+  border-color: #1e90ff;
+}
+
+/*----- ラジオボタン -----*/
+input[type=radio], input[type=checkbox] {
+  display: none;
+}
+input[type=radio] + label, input[type=checkbox] + label {
+  display: inline-block;
+  background-position: 5px 50%;
+  background-repeat: no-repeat;
+  border: 1px solid #CCC;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+input[type=radio] + label {
+  padding: 12px 10px 12px 48px;
+  background-color: #999;
+  color: #FFF;
+}
+
+#boy:checked + label {
+  background-color: #1e90ff;
+  border-color: #1e90ff;
+}
+
+#girl:checked + label {
+  background-color: #f09199;
+  border-color: #f09199;
+}
+
+#boy + label {
+  background-image: url(../images/bg_boy.png);
+}
+
+#girl + label {
+  background-image: url(../images/bg_girl.png);
+}
+
+/*----- チェックボックス -----*/
+input[type=checkbox] + label {
+  background-image: url(../images/bg_checkbox.png);
+  background-color: #E5E5E5;
+  background-repeat: no-repeat;
+  background-position: 5px 50%;
+  padding: 8px 10px 8px 36px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  width: 60%;
+}
+
+input[type=checkbox]:checked + label {
+ background-image: url(../images/bg_checked.png);
+ background-color: #fcc800;
+ border-color:#fcc800;
+}
+
+.companion li {
+  margin-bottom: 10px;
+}
+
+/*----- セレクトボックス -----*/
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 1em;
+  width: 90%;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 3px solid #E5E5E5;
+  background: white url(../images/ico_list.png) no-repeat 95% 50%;
+  height: 48px;
+}
+
+/*----- 日付入力 -----*/
+input[type=date] {
+  -webkit-appearance: none;
+  font-size: 1em;
+  padding-left: 48px;
+  height: 48px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 3px solid #E5E5E5;
+  background: url(../images/ico_calendar.png) no-repeat 5px 50%;
+}
+
+/*----- 送信ボタン -----*/
+input[type=submit] {
+  border: solid 1px #186f8f;
+  color: #FFF;
+  padding: 12px 0;
+  width: 80%;
+  font-size: 1em;
+  display: block;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 20px auto;
+  background-color: #2391ff;
+  background-image: -webkit-linear-gradient(top,#0077ef 0%, #2391ff 100%);
+  background-image: linear-gradient(top,#0077ef 0%, #2391ff 100%);
+}
+
+input[type=submit]:hover {
+  background: #2391ff;
+  background-image: -webkit-linear-gradient(top,#005ebc 0%, #2391ff 100%);
+  background-image: linear-gradient(top,#005ebc 0%, #2391ff 100%);
+}

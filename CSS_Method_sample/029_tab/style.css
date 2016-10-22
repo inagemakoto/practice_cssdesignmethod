@@ -1,0 +1,130 @@
+﻿@charset "utf-8";
+
+/* ------- base ------- */
+
+body, div, ul, li {
+	margin:0;
+	padding:0;
+}
+
+img {
+	border:0;
+}
+
+body {
+	background-color: #FFF;
+	font-size: 62.5%;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #292623;
+}
+
+a {
+	text-decoration: none;
+	color: #292623;
+}
+
+.clearfix:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+/* ------- header ------- */
+
+#header {
+	width:100%;
+	height: 120px;
+	background: url(images/bg.png) repeat-x 0 bottom #D8D8C5;
+}
+
+#header-inner {
+	width: 700px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+#logo {
+	float: left;
+	padding-top: 17px;
+}
+
+#nav {
+	float: right;
+	padding-top: 37px;
+}
+
+#nav li {
+	float: left;
+	padding-left: 15px;
+	list-style-type: none;
+	
+}
+
+/* ------- タブ ------- */
+#tab {
+	width: 700px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+#tab li {
+	float: left;
+	margin-right: 3px;
+	list-style-type: none;
+}
+
+#tab li a {
+	display:block;
+	width: 120px;
+	height: 34px;
+	padding-top: 6px;
+	font-size: 1.8em;
+	text-align:center;
+	background-color: #494941;
+	color:#FFF;
+}
+
+#tab li a:hover {
+	background-color: #747468;
+	color:#FFF;
+}
+
+#tab li a.selected {
+	background-color: #FFF;
+	color:#292623;
+}
+
+/* ------- コンテンツ ------- */
+#contents {
+	width: 620px;
+	margin: 50px auto;
+}
+
+#contents h1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 2.4em;
+}
+
+#contents p {
+	width: 390px;
+	margin: 0 auto;
+	font-size: 1.2em;
+	line-height: 2;
+}
+
+/* ------- footer ------- */
+
+#footer {
+	width:100%;
+	height: 35px;
+	padding-top:23px;
+	text-align:center;
+	background-color: #494941;
+	color:#CCC;
+	bottom:0;
+	position:fixed;
+}
+
+

@@ -1,0 +1,71 @@
+﻿@charset "utf-8";
+
+/* ------- base ------- */
+
+body, div, ul, li {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-color: #DFE0D1;
+	font-size: 62.5%;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #292623;
+}
+
+a {
+	text-decoration: none;
+	color: #292623;
+}
+
+/* ------- wrapper ------- */
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+/* ------- header ------- */
+
+#header {
+	height: 70px;
+}
+
+#header img {
+	margin-top: 25px;
+}
+
+/* ------- nav ------- */
+
+#nav {
+	width: 900px;
+	background: #FFFFFF;
+}
+
+#nav li {
+	list-style-type: none;
+}
+
+#nav > li {
+	position: relative;
+	float: left;
+	width: 150px;
+}
+
+#nav > li > a {
+	display: block;
+	padding: 23px 0 23px 0;
+	background: #FFFFFF;
+	border-right: 1px solid #C2C5A9;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 1.8em;
+	line-height: 1;
+	text-align: center;
+}
+
+#nav > li:hover > a {
+	background: #4F4944;
+	color: #FFFFFF;
+	font-weight: bold;
+}

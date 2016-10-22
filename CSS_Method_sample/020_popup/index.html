@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<title>ポップアップコンテンツサンプル</title>
+
+<!-- サンプルページのスタイルシート -->
+<link rel="stylesheet" href="./css/style.css">
+
+<!-- colorboxのスタイルシート -->
+<link rel="stylesheet" href="./colorbox/colorbox.css">
+
+</head>
+<body>
+
+	<div class="page-header">
+		<h1 class="page-header-title"><img src="./img/sample_title.png" height="140" width="596" alt=""></h1>
+	</div>
+
+	<div class="page-box">
+		<div class="page-goods goods">
+			<div class="photo-box">
+				<img src="./img/sample_photo.jpg" height="520" width="390" alt="">
+				<p class="photo-info-link"><a href="#photo-info-main" class="popup-link">MORE INFORMATION</a></p>
+			</div>
+			<div class="info-box">
+				<p class="page-header-leadtext">ポップアップでコンテンツを表示するサンプルです。</p>
+				<dl class="basic-info">
+					<dt class="basic-info-title">Item</dt>
+					<dd class="basic-info-detail">商品名</dd>
+					<dt class="basic-info-title">Caegory</dt>
+					<dd class="basic-info-detail">◯◯◯◯</dd>
+					<dt class="basic-info-title">Price</dt>
+					<dd class="basic-info-detail">0,000円</dd>
+					<dt class="basic-info-title">Size</dt>
+					<dd class="basic-info-detail">0.00cm(W) × 0.00cm(H) × 0.00cm(D)</dd>
+					<dt class="basic-info-title">Releaze Date</dt>
+					<dd class="basic-info-detail">◯◯月 〜 ◯◯月</dd>
+				</dl>
+				<div class="goods-detail">
+					<p>オーソドックスなストレートジーンズ。加工はユーズドのみで、ダメージ加工は行っていません。</p>
+				</div>
+				<div id="photo-info-box">
+					<div id="photo-info-main">
+						<p class="photo-info-image">
+							<img src="./img/info_photo.jpg" height="260" width="195" alt="">
+						</p>
+						<div class="photo-info">
+							<h2 class="photo-info-header">MORE INFORMATION</h2>
+							<p>撮影日：◯月◯日</p>
+							<p>モデル：◯◯◯◯◯</p>
+							<p>カメラ：◯◯◯◯◯</p>
+							<p>オーソドックスなストレートジーンズ。加工はユーズドのみで、ダメージ加工は行っていません。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- JavaScript -->
+
+	<!-- jQueryの読み込み -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+	<!-- Colorboxの読み込み -->
+	<script src="./colorbox/jquery.colorbox-min.js"></script>
+
+	<script>
+	$(function(){
+		//ポップアップコンテンツの非表示化
+		$('#photo-info-box').css('display','none');
+
+		// Colorboxの設定
+		$('.popup-link').colorbox({inline: true,opacity: 0.50});
+	});
+	</script>
+
+</body>
+</html>

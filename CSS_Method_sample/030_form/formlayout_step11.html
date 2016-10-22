@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>easy to use form</title>
+	<link href="assets/css/jquery.minimalect.min.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="assets/css/formlayout_step11.css" rel="stylesheet" type="text/css" media="all"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script>window.jQuery || document.write('<script src="asset/scripts/jquery-1.10.1.min.js"><\/script>')</script>
+	<script src="assets/scripts/jquery.minimalect.min.js"></script>
+	<script src="assets/scripts/formlayout_script11.js"></script>
+</head>
+<body>
+<div id="cb">
+
+<div id="header">
+	<div class="inner">
+		<h1>CSS Online</h1>
+		<div id="global-nav">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Living Room</a></li>
+				<li><a href="#">Kitchen</a></li>
+				<li><a href="#">Bed Rooms</a></li>
+				<li><a href="#">Tableware</a></li>
+				<li><a href="#">Goods</a></li>
+			</ul>
+		</div>
+		<p id="login-here"><a href="#">Login</a></p>
+	</div>
+</div>
+
+<div id="contents" class="sign-up-page">
+	<h1 id="page-title">Sign Up</h1>
+	<p>Lorem ipsum Deserunt consectetur elit non reprehenderit laboris occaecat exercitation dolore elit ullamco consectetur velit sit irure Excepteur enim esse dolor voluptate est sint et quis labore anim eu ex tempor commodo elit ullamco sit.</p>
+
+	<form action="e2uform" method="get" name="user-sign-up" id="user-sign-up">
+
+		<fieldset class="category-group">
+			<legend>Your Account</legend>
+			<table>
+				<tr>
+					<th>
+						<label for="username">Username <span class="required-mark">required</span></label>
+					</th>
+					<td>
+						<input type="text" name="username" id="username">
+						<span class="notes">Use at least 3 characters (Letter, Number and Symbols(-_+@.))</span>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="password">Password <span class="required-mark">required</span></label>
+					</th>
+					<td>
+						<input type="password" name="password" id="password">
+						<span class="notes">Use at least 8 characters (Letter, Number and Symbols).</span>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="confirm-password">Confirm Password <span class="required-mark">required</span></label>
+					</th>
+					<td>
+						<input type="password" name="confirm-password" id="confirm-password">
+						<span class="notes">Type password again.</span>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+
+		<fieldset class="category-group">
+			<legend>Your Information</legend>
+			<table>
+				<tr>
+					<th>
+						<label>Name <span class="required-mark">required</span></label>
+					</th>
+					<td>
+						<label for="first-name">First</label>
+						<input type="text" name="first-name" id="first-name" class="name-field last-name">
+						<label for="last-name">Last</label>
+						<input type="text" name="last-name" id="last-name" class="name-field">
+					</td>
+				</tr>
+				<tr>
+					<th>Gender</th>
+					<td>
+						<div class="gender-field">
+							<label><input type="radio" name="gender" id="gender-male" value="male"> Male</label>
+							<label><input type="radio" name="gender" id="gender-female" value="Female"> Female</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label>Birthday</label>
+					</th>
+					<td>
+						<label for="year">Year</label>
+						<span class="birthday-field">
+							<input type="text" name="year" id="year" class="short-field" placeholder="1970">
+						</span>
+						<label for="month">Month</label>
+						<span class="birthday-field">
+							<select name="month" id="month">
+								<option value="month-1">1</option>
+								<option value="month-2">2</option>
+								<option value="month-3">3</option>
+								<option value="month-4">4</option>
+								<option value="month-5">5</option>
+								<option value="month-6">6</option>
+								<option value="month-7">7</option>
+								<option value="month-8">8</option>
+								<option value="month-9">9</option>
+								<option value="month-10">10</option>
+								<option value="month-11">11</option>
+								<option value="month-12">12</option>
+							</select>
+						</span>
+						<label for="day">Day</label>
+						<span class="birthday-field">
+							<input type="text" name="day" id="day" class="short-field" placeholder="1">
+						</span>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="zipcode">Zip Code <span class="required-mark">required</span></label>
+					</th>
+					<td>
+						<div>
+							<input type="text" name="zipcode" id="zipcode" class="middle-field" placeholder="100-0000">
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="email">E-Mail <span class="required-mark">required</span></label>
+					</th>
+					<td>
+						<input type="text" name="email" id="email" placeholder="example@example.com">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						<label for="confirm-email">Confirm E-Mail <span class="required-mark">required</span></label>
+					</th>
+					<td>
+						<input type="text" name="confirm-email" id="confirm-email">
+						<span class="notes">Type E-Mail again.</span>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+
+		<fieldset class="category-group">
+			<legend>Your Interests</legend>
+			<table>
+				<tr>
+					<th>Choose Category</th>
+					<td>
+						<div class="interests-field">
+							<label><input type="checkbox" value="interest1" name="interests" id="interest1"> interest1</input></label>
+							<label><input type="checkbox" value="interest2" name="interests" id="interest2"> interest2</input></label>
+							<label><input type="checkbox" value="interest3" name="interests" id="interest3"> interest3</input></label>
+							<label><input type="checkbox" value="interest4" name="interests" id="interest4"> interest4</input></label>
+							<label><input type="checkbox" value="interest5" name="interests" id="interest5"> interest5</input></label>
+							<label><input type="checkbox" value="interest6" name="interests" id="interest6"> interest6</input></label>
+							<label><input type="checkbox" value="interest7" name="interests" id="interest7"> interest7</input></label>
+							<label><input type="checkbox" value="interest8" name="interests" id="interest8"> interest8</input></label>
+							<label><input type="checkbox" value="interest9" name="interests" id="interest9"> interest9</input></label>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+
+		<div id="signup-agreement">
+			<label>
+				<span class="required-mark">required</span> Agree to our terms of us and privacy policy. <input type="checkbox" name="agreement" id="agreement">
+			</label>
+		</div>
+
+		<div id="signup-next"><input type="submit" value="Confirm the input" class="button-primary"></div>
+
+	</form>
+</div>
+
+
+<div id="footer">
+	<div class="inner">
+		<div class="topic-path">
+			<p><a href="#">Home</a></p>
+			<p class="current">Sign Up</p>
+		</div>
+		<div class="footer-nav-others">
+			<ul>
+				<li><a href="#">Company Info</a></li>
+				<li><a href="#">Site Map</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+			</ul>
+		</div>
+		<p id="copyright">&copy; CSS Online. All right reserved.</p>
+	</div>
+</div>
+
+</div>
+</body>
+</html>

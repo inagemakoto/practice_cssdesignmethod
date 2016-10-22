@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/*jQueryMobile修正*/
+.ui-bar-a, .ui-bar-a input, .ui-bar-a select, .ui-bar-a textarea, .ui-bar-a button{
+	font-family: 'Fredericka the Great', cursive;
+}
+.ui-page {
+	background: url(../images/bg_dotto.gif) repeat;
+	color: #fff;
+}
+/*コンテンツ*/
+.head{
+	background-image:url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size:100% auto;
+	background-position:bottom;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (-moz-min-device-pixel-ratio: 2)
+{
+.head{
+	background-image:url(../images/bg@2x.jpg);
+}
+}
+@media screen and (min-width: 600px) 
+{
+.head{
+	background-image:url(../images/bg@2x.jpg);
+}
+}
+#home h1 img{
+	margin:auto;
+}
+
+/*ギャラリー*/
+.gallery {
+	list-style: none; padding: 0; margin: 0;
+}
+.gallery li {
+	float: left;
+	width: 33.33333333%; 
+}
+.gallery li a {
+	display: block;
+	margin: 5px;
+	border: 1px solid #3c3c3c;
+}
+.gallery li img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+#gallery1 .ui-content, #gallery2 .ui-content, #gallery3 .ui-content {
+	overflow: hidden;
+}

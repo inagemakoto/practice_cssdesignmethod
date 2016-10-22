@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* -----------------------------------------------------------
+ reset
+----------------------------------------------------------- */
+html{color:#000000;background:#FFFFFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+img{vertical-align:top;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+caption,th{text-align:left;vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input,textarea,select{z-index:auto;font-family:inherit;font-size:inherit;font-weight:inherit;}
+/*to enable resizing for IE*/
+input,textarea,select{*font-size:100%;}
+/*because legend doesn't inherit in IE */
+legend{color:#000;}
+
+body {font:12px/1.231;font-family:Ubuntu,arial,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",Osaka,Sans-Serif;*font-size:small;*font:x-small;}
+table {font-size:inherit;font:100%;}
+pre,code,kbd,samp,tt {font-family:monospace;*font-size:108%;line-height:100%;}
+/* -----------------------------------------------------------
+ body
+----------------------------------------------------------- */
+body {
+	background-image:url(../images/earth.png),url(../images/bg.jpg);
+	background-repeat:no-repeat,repeat;
+	background-position:88% 35px,0 0;
+	color:#333;
+	text-align:center;
+	line-height:1.6;
+}
+body {
+	font-size:85%;
+}
+/*----------------------------------------------------
+ link
+----------------------------------------------------*/
+a:link,a:visited {
+	color:#333;
+}
+a:hover,a:active {
+	text-decoration:none;
+}
+/* --------------------------------------------------------
+ header
+----------------------------------------------------------- */
+#header {
+	text-shadow:1px 1px 1px #fff;
+	text-align:left;
+	margin:0 auto;
+	width:960px;
+}
+#header ul {
+	background:url(../images/mark.png) 20px 56px no-repeat;
+	padding:0 0 0 80px;
+	height:118px;
+}
+#header ul li {
+	float:left;
+	margin:0 20px 0 0;
+	font-size:140%;
+}
+#header ul li a {
+	display:block;
+	text-align:center;
+	padding:60px 0 0 0;
+	width:76px;
+	height:53px;
+	text-decoration:none;
+}
+#header ul li a.active:link,
+#header ul li a.active:visited,
+#header ul li a:hover {
+	background:url(../images/nav.png) 0 0 no-repeat;
+	color:#fff;
+	text-shadow: -1px -1px 1px #78A7B0;
+}
+/* --------------------------------------------------------
+ contents
+ tabArea
+----------------------------------------------------------- */
+#contents {
+	text-align:left;
+	margin:0 auto;
+	width:960px;
+	height:1000px;
+	overflow:hidden;
+	position:relative;
+	text-shadow:1px 1px 1px #fff;
+}
+#tabArea {
+	width:4800px; /* タブの合計幅(960 * 5 = 4800) */
+	position:absolute;
+	height:1000px;
+}
+#tabArea div#top,
+#tabArea div#cats,
+#tabArea div#dogs,
+#tabArea div#memo,
+#tabArea div#contact {
+	width:960px;
+	float:left;
+	padding:0;
+}
+#tabArea h2 {
+	font-size:770%;
+	text-shadow:-1px -1px 1px #000,1px 1px 1px #fff;
+	letter-spacing:-0.06em;
+	color:#505050;
+	padding:0 0 0 25px;
+}
+#tabArea p.read {
+	margin:-20px 0 40px;
+	padding:0 0 0 25px;
+	width:540px;
+}
+/* --------------------------------------------------------
+ footer
+----------------------------------------------------------- */
+#footer {
+	position:fixed;
+	bottom:0;
+	left:0;
+	background-color:#829797;
+	text-align:center;
+	width:100%;
+	color:#fff;
+	padding:10px;
+}
+/* --------------------------------------------------------
+ TAB top
+----------------------------------------------------------- */
+#top {
+	padding:0 0 0 25px;
+}
+#top h1 {
+	font-size:770%;
+	text-shadow:-1px -1px 1px #000,1px 1px 1px #fff;
+	letter-spacing:-0.06em;
+	color:#505050;
+}
+#top p.read {
+	margin:-20px 0 40px;
+	width:540px;
+}
+#top ul li {
+	float:left;
+	width:265px;
+	padding:0 54px 0 0;
+}
+#top ul li:last-child {
+	padding:0;
+}
+#top ul li img {
+	background:url(../images/top04.png) center bottom no-repeat;
+	padding:0 0 17px;
+	width:212px;
+	margin:0 auto;
+	display:block;
+}
+#top ul li .txt {
+	background-color:#F3F5F6;
+	text-align:center;
+	padding:0 15px 15px;
+}
+#top ul li .txt .tit {
+	padding:10px 0 0 0;
+	font-size:130%;
+	font-weight:bold;
+}
+/* --------------------------------------------------------
+ TAB
+----------------------------------------------------------- */
+#cats li,
+#dogs li {
+	background-color:#fff;
+	padding:10px;
+	float:left;
+	margin:0 25px 50px;
+	width:250px;
+	height:230px;
+	font-size:90%;
+	box-shadow:1px 1px 2px #829797;
+}
+#cats li a,
+#dogs li a {
+	display:block;
+	float:left;
+}
+/* -----------------------------------------------------------
+ opacity
+----------------------------------------------------------- */
+#cats ul a:hover img,
+#dogs ul a:hover img {
+	opacity: 0.7;
+}
+/* -----------------------------------------------------------
+ clearfix
+----------------------------------------------------------- */
+.clearfix:after,
+#contents:after {
+	content:".";
+	display:block;
+	height:0;
+	font-size:0.1%;
+	line-height:0.1;
+	clear:both;
+	visibility:hidden;
+}
+*:first-child+html .clearfix,
+*:first-child+html #contents {
+	min-height:1%;
+}
+* html .clearfix,
+* html #contents {
+	height:1%;
+}

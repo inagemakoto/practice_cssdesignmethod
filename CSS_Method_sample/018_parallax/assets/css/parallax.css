@@ -1,0 +1,281 @@
+@charset "utf-8";
+/* general */
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font: medium/1.6 Helvetica, Arial, sans-serif;
+}
+
+img {
+	vertical-align: bottom;
+	line-height: 1;
+}
+
+@font-face {
+	font-family: 'parallax';
+	src: url("../fonts/parallax.eot");
+	src: url("../fonts/parallax.eot?#iefix") format("embedded-opentype"), url("../fonts/parallax.woff") format("woff"), url("../fonts/parallax.ttf") format("truetype"), url("../fonts/parallax.svg#parallax") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-twitter,
+.icon-facebook,
+.icon-google-plus,
+.icon-arrow-down {
+	font-family: 'parallax';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* container block */
+#cb {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* global header */
+#header {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	padding-bottom: 0.75em 0;
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.6);
+	color: #FFF;
+	background-color: #222;
+}
+#header h1 {
+	line-height: 1;
+	text-align: center;
+}
+#header h1 span.icon-earth {
+	display: inline-block;
+	padding: 0 0.25em;
+}
+
+/* contents */
+/* contents blocks */
+#contents {
+	width: 960px;
+	margin: 0 auto;
+}
+
+body {
+	position: relative;
+	height: 5300px;
+	font-family: 'Merriweather', serif;
+	background: #222222 url(../img/prlxbg.png) 0 0;
+}
+
+/* General Styles */
+.content-box {
+	position: absolute;
+	width: 420px;
+	padding: 1.6em 1.6em 0.6em;
+	border-radius: 8px;
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.content-box h1,
+.content-box h2 {
+	margin: 0;
+	font-weight: 300;
+}
+
+.content-box h2 {
+	font-size: 225%;
+}
+
+/* Content Start */
+#scroll-start {
+	top: 64px;
+	left: 50%;
+	width: 600px;
+	margin-left: -300px;
+	padding: 0;
+	text-align: center;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+	font-size: 125%;
+	background-color: transparent;
+}
+
+#scrl-down:after {
+	display: block;
+	content: 'D';
+	color: #999;
+	font-size: 300%;
+	font-family: 'parallax';
+}
+
+/* Photos */
+.spots {
+	position: fixed;
+	width: 960px;
+	height: 540px;
+}
+
+.spots .prlx {
+	position: absolute;
+	width: 960px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+/* Photo1 */
+#spot1 {
+	top: 1000px;
+}
+
+#desc1 {
+	top: 2em;
+	left: 2em;
+}
+
+#spot1-1 {
+	height: 128px;
+	background-image: url(../img/mountain_road1.jpg);
+}
+
+#spot1-2 {
+	top: 10px;
+	height: 274px;
+	background-image: url(../img/mountain_road2.png);
+}
+
+#spot1-3 {
+	top: 40px;
+	height: 326px;
+	background-image: url(../img/mountain_road3.png);
+}
+
+#spot1-4 {
+	top: 60px;
+	height: 344px;
+	background-image: url(../img/mountain_road4.png);
+}
+
+/* Photo2 */
+#spot2 {
+	top: 2000px;
+}
+
+#desc2 {
+	bottom: 2em;
+	left: 2em;
+}
+
+#spot2-1 {
+	left: 0;
+	width: 472px;
+	height: 540px;
+	background-image: url(../img/hydrangea1.jpg);
+}
+
+#spot2-2 {
+	left: 20px;
+	width: 623px;
+	height: 540px;
+	background-image: url(../img/hydrangea2.png);
+}
+
+#spot2-3 {
+	left: 200px;
+	width: 448px;
+	height: 540px;
+	background-image: url(../img/hydrangea3.png);
+}
+
+/* Photo3 */
+#spot3 {
+	top: 3000px;
+}
+
+#desc3 {
+	top: 2em;
+	left: 2em;
+}
+
+#spot3-1 {
+	height: 433px;
+	background-image: url(../img/sunset1.jpg);
+}
+
+#spot3-2 {
+	top: 210px;
+	height: 230px;
+	background-image: url(../img/sunset2.png);
+}
+
+/* Photo4 */
+#spot4 {
+	top: 4000px;
+}
+
+#desc4 {
+	top: 2em;
+	right: 2em;
+}
+
+#spot4-1 {
+	height: 92px;
+	background-image: url(../img/night_scape1.jpg);
+}
+
+#spot4-2 {
+	top: 20px;
+	height: 150px;
+	background-image: url(../img/night_scape2.png);
+}
+
+#spot4-3 {
+	top: 40px;
+	height: 384px;
+	background-image: url(../img/night_scape3.png);
+}
+
+/* global footer */
+#scroll-end {
+	position: absolute;
+	top: 5144px;
+	width: 100%;
+	height: 300px;
+	border-top: 1px solid #2A2A2A;
+	box-shadow: 0 0 2em black;
+	background-color: #181818;
+}
+#scroll-end ul {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin: -2em auto 0;
+	padding: 0;
+	text-align: center;
+}
+#scroll-end ul li {
+	display: inline-block;
+}
+#scroll-end ul li a {
+	display: inline-block;
+	width: 1.5em;
+	margin: 0 0.5em 0;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+	color: #FFF;
+	font-size: 4em;
+}
+#scroll-end ul li a:hover {
+	color: #CCC;
+}

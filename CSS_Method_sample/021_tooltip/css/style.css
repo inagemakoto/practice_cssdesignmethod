@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* -----------------------------------------------------------
+ reset
+----------------------------------------------------------- */
+html{color:#000000;background:#FFFFFF;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+img{vertical-align:top;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+li{list-style:none;}
+caption,th{text-align:left;vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input,textarea,select{z-index:auto;font-family:inherit;font-size:inherit;font-weight:inherit;}
+/*to enable resizing for IE*/
+input,textarea,select{*font-size:100%;}
+/*because legend doesn't inherit in IE */
+legend{color:#000;}
+
+body {font:12px/1.231;font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",Osaka,Sans-Serif;*font-size:small;*font:x-small;}
+table {font-size:inherit;font:100%;}
+pre,code,kbd,samp,tt {font-family:monospace;*font-size:108%;line-height:100%;}
+/* -----------------------------------------------------------
+ body
+----------------------------------------------------------- */
+body {
+	background:url(../images/bg.gif) 0 0 repeat;
+	color:#333;
+	text-align:center;
+	line-height:1.6;
+}
+body {
+	font-size:90%;
+}
+/*----------------------------------------------------
+ link
+----------------------------------------------------*/
+a:link,a:visited {
+	color:#333;
+}
+a:hover,a:active {
+	text-decoration:none;
+}
+a:hover {
+	opacity:0.8;
+}
+/* --------------------------------------------------------
+ header
+----------------------------------------------------------- */
+#header {
+	background-color:#fff;
+	margin:0 auto;
+	text-align:left;
+	height:90px;
+	box-shadow:0 1px 5px #999;
+}
+#header h1 {
+	padding:20px 0 15px 0;
+	text-align:center;
+}
+/* --------------------------------------------------------
+ nav
+----------------------------------------------------------- */
+.nav {
+	margin:0 auto;
+	width:1000px;
+}
+.nav ul {
+	clear:both;
+	margin:0 0 0 -50px;
+}
+.nav ul li {
+	float:left;
+	padding:0 0 0 180px;
+	width:46px;
+}
+/* --------------------------------------------------------
+ contents
+----------------------------------------------------------- */
+#contents {
+	text-align:left;
+	margin:0 auto;
+	width:1000px;
+}
+/**/
+#picture ul li {
+	float:left;
+	border-right:#CDCDCD 1px solid;
+	border-bottom:#CDCDCD 1px solid;
+}
+#picture ul li.sale {
+	position:relative;
+	overflow:hidden;
+}
+#picture ul li.sale:after {
+	position:absolute;
+	background:#26ACC0;
+	content:"30%OFF";
+	top:5px;
+	right:-30px;
+	padding:5px 10px;
+	text-align:center;
+	color:#fff;
+	width:120px;
+    box-shadow:0 1px 3px #999;
+	transform:rotate(30deg);
+	-webkit-transform:rotate(30deg);
+}
+/* --------------------------------------------------------
+ sidebar
+----------------------------------------------------------- */
+#sidebar {
+	background-color:#26ACC0;
+	float:left;
+	height:822px;
+	width:178px;
+	box-shadow:3px 0 2px #ccc;
+}
+#sidebar ul {
+	margin:25px 49px 0;
+	padding:25px 0 0 0;
+}
+#sidebar ul:last-child {
+	border-top:#1D8392 1px solid;
+}
+#sidebar ul li {
+	margin-bottom:10px;
+}
+/* --------------------------------------------------------
+ footer
+----------------------------------------------------------- */
+#footer {
+	padding:30px 0;
+	text-align:center;
+}
+/* -----------------------------------------------------------
+ clearfix
+----------------------------------------------------------- */
+.clearfix:after,
+#contents:after {
+	content:".";
+	display:block;
+	height:0;
+	font-size:0.1%;
+	line-height:0.1;
+	clear:both;
+	visibility:hidden;
+}
+*:first-child+html .clearfix,
+*:first-child+html #contents {
+	min-height:1%;
+}
+* html .clearfix,
+* html #contents {
+	height:1%;
+}

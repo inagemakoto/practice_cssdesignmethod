@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>table layout</title>
+	<link href="assets/css/tablelayout_step8.css" rel="stylesheet" type="text/css" media="all"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+<div id="cb">
+
+<div id="header">
+	<h1>CSS Products</h1>
+	<form action="" name="content_search" id="content-search">
+		<input type="text" value="search" class="search-words">
+	</form>
+	<div id="global-nav">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Desktop</a></li>
+			<li><a href="#">Notebook</a></li>
+			<li><a href="#">Mobile</a></li>
+			<li><a href="#">Accessories</a></li>
+			<li><a href="#">Support</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="contents">
+	<h1 id="page-title">All-in-One</h1>
+	<ul id="local-nav">
+		<li><a href="#">Futrues</a></li>
+		<li><a href="#">Performance</a></li>
+		<li class="current"><a href="#">Tech Specs</a></li>
+	</ul>
+	<h2>Tech Specs</h2>
+	<img src="assets/img/tl_main_visual.png" class="title-visual">
+
+	<table class="table-style">
+		<thead>
+			<tr>
+				<th>Equipment</th>
+				<th><img src="assets/img/tl_a21.png"><br>model: A21</th>
+				<th><img src="assets/img/tl_a24.png"><br>model: A24</th>
+				<th><img src="assets/img/tl_a27.png"><br>model: A27</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Processor</th>
+				<td>2.7GHz Quad Core with 6MB L3 cache</td>
+				<td>2.9GHz Quad Core with 6MB L3 cache</td>
+				<td>3.2GHz Quad Core with 6MB L3 cache</td>
+			</tr>
+			<tr>
+				<th>Memory</th>
+				<td>8GB (two 4GB / 1,600MHz DDR3) Configurable to 16GB</td>
+				<td>8GB (two 4GB / 1,600MHz DDR3) Configurable to 16GB</td>
+				<td>16GB (two 8GB / 1,600MHz DDR3) Configurable to 32GB</td>
+			</tr>
+			<tr>
+				<th>Storage</th>
+				<td>1TB Hard Drive (5,400rpm)</td>
+				<td>1TB Hard Drive (5,400rpm) Configurable to 512MB Flash Storage</td>
+				<td>1TB Flash Storage</td>
+			</tr>
+			<tr>
+				<th>Graphics</th>
+				<td>NV21 Graphics processor 512MB GDDR5</td>
+				<td>NV24 Graphics processor 512MB GDDR5</td>
+				<td>NV27 Graphics processor 1GB GDDR5 Configurable to NV30 2GB GDDR5</td>
+			</tr>
+			<tr>
+				<th>Display</th>
+				<td>21 inch LED Backlite Display IPS / 1,920 x 1,080 resolution. Support for Full colors.</td>
+				<td>24 inch LED Backlite Display IPS / 1,920 x 1,080 resolution. Support for Full colors.</td>
+				<td>27 inch LED Backlite Display IPS / 2,569 x 1,440 resolution. Support for Full colors.</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="4" scope="rowgroup" class="tbody-heading">Connections and Expansions</th>
+			</tr>
+			<tr>
+				<th>USB 3 Ports</th>
+				<td>x 4</td>
+				<td>x 4</td>
+				<td>x 8</td>
+			</tr>
+			<tr>
+				<th>Thunderbolt Ports</th>
+				<td>x 1</td>
+				<td>x 1</td>
+				<td>x 2</td>
+			</tr>
+			<tr>
+				<th>HDMI</th>
+				<td>x 2</td>
+				<td>x 2</td>
+				<td>x 2</td>
+			</tr>
+			<tr>
+				<th rowspan="3">Audio</th>
+				<td colspan="3">Stereo Speakers</td>
+			</tr>
+			<tr>
+				<td colspan="3">Dual microphons</td>
+			</tr>
+			<tr>
+				<td colspan="3">Headphone port (optical digital audio output)</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="4" scope="rowgroup" class="tbody-heading">Network</th>
+			</tr>
+			<tr>
+				<th rowspan="2">Wireless</th>
+				<td colspan="3">Wi-Fi 802.11n; IEEE 802.11a/b/g compatible</td>
+			</tr>
+			<tr>
+				<td colspan="3">Bluetooth 4.1</td>
+			</tr>
+			<tr>
+				<th>Ethernet</th>
+				<td colspan="3">10 / 100 / 1000 BASE-T Gigabit (RS-45)</td>
+			</tr>
+		</tbody>
+		<tbody>
+			<tr>
+				<th colspan="4" scope="rowgroup" class="tbody-heading">Dimensions and Wegith</th>
+			</tr>
+			<tr>
+				<th>Width</th>
+				<td>53.0cm</td>
+				<td>59.0cm</td>
+				<td>65.0cm</td>
+			</tr>
+			<tr>
+				<th>Height</th>
+				<td>44.5cm</td>
+				<td>48.4cm</td>
+				<td>51.8cm</td>
+			</tr>
+			<tr>
+				<th>Depth</th>
+				<td>17.8cm</td>
+				<td>17.8cm</td>
+				<td>20.5cm</td>
+			</tr>
+			<tr>
+				<th>Wight</th>
+				<td>5.72kg</td>
+				<td>7.12kg</td>
+				<td>9.61kg</td>
+			</tr>
+			<tr>
+				<th rowspan="2">Accessories</th>
+				<td colspan="3">Wireless Mouse; Multi Touch Support.</td>
+			</tr>
+			<tr>
+				<td colspan="3">Wireless Keyboard (Full Size or Short)</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+<div id="footer">
+	<div class="topic-path">
+		<p><a href="#">Home</a></p>
+		<p><a href="#">Desktop</a></p>
+		<p><a href="#">All-in-One</a></p>
+		<p class="current">Tech Specs</p>
+	</div>
+	<div class="footer-nav-others">
+		<ul>
+			<li><a href="#">Company Info</a></li>
+			<li><a href="#">Site Map</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+		</ul>
+	</div>
+	<p id="copyright">&copy; CSS Products. All right reserved.</p>
+</div>
+
+</div>
+</body>
+</html>

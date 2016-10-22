@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* -----------------------------------------------------------
+reset
+----------------------------------------------------------- */
+body,div,h1,h2{
+	margin:0;padding:0;
+}
+img{ border:0;}
+h1,h2{
+	font-weight:normal;
+}
+/*----------------------------------------------------
+style
+--------------------------------------------------*/
+body{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 80%;
+}
+.header{
+	font-family: 'Grand Hotel', cursive;
+	color: #003366;
+	margin:auto;
+	position:fixed;
+	top:0;
+	z-index:1;
+	width: 100%;
+	text-align: center;
+}
+.header h1{
+	font-size: 670%;
+}
+.header p{
+	border-bottom: 1px solid #003366;
+	border-top: 1px solid #003366;
+	font-size: 200%;
+	letter-spacing: 2px;
+}
+.content{
+	background: #3E658C;
+	margin: 250px auto 20px;
+	width: 820px;
+	filter: alpha(opacity=80); /*IE8*/
+	-moz-opacity: 0.8; /*fx*/
+	opacity: 0.8;/*wb*/
+	/*css3*/
+	/*background-color: rgba(62,100,140,0.8);*/
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+	padding:30px 0 0;
+	border: 1px #fff solid;
+}
+.content-png{
+	background: #3E658C;
+	margin: 20px auto 20px;
+	width: 820px;
+	background: url(../images/bg_content.png) repeat;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	-ms-border-radius:10px;
+	border-radius:10px;
+	padding:30px 0 0;
+	border: 1px #fff solid;
+}
+h2{
+	font-family: 'Grand Hotel', cursive;
+	color: #ECE300;
+	font-size: 500%;
+	margin-bottom: 15px;
+	-webkit-transform:skewY(-6deg);
+	-ms-transform:skewY(-6deg);
+	transform:skewY(-6deg);
+	text-decoration: underline;
+}
+.content p,.content-png p{
+	color: #ccc;
+	margin:0 auto 30px;
+}
+.photo-area{
+	overflow: hidden;
+	padding: 0 0 0 12px;
+}
+.content-png .photo-area p{
+	float: left;
+	margin-right: 8px;
+	width: 260px;
+}
+.contents{
+	width: 780px;
+	margin: 0 auto 30px;
+	text-align: center;
+}

@@ -1,0 +1,157 @@
+body{  
+	margin: 0;  
+	line-height: 150%; 
+	font-size:90%;
+	background: #f2eadf;
+}
+
+a {
+	text-decoration: none;
+	color:#000;
+}
+
+h1 {
+	padding:0;
+	margin:0;
+}
+h1 a {
+	width:259px;
+	height:88px;
+	display: block;
+	background: url(../img/logo.png) no-repeat;
+	margin:0 auto;
+}
+
+h2 {
+	border-left: 8px solid #e96;
+	padding-left:15px;
+}
+
+/* ヘッダーエリア */
+div#header {  
+	width: 100%;  
+	height: 96px;  
+	padding:5px 0;  
+	background-color: #402000;  
+	color: #fff;  
+	box-shadow: 0px 2px 15px 5px #aaa;
+}
+
+/* フッターエリア */
+div#footer {  
+	width: 100%;  
+	height: 60px;  
+	padding:10px 0;
+	background-color: #402000;  
+	color: #ffdf14;
+	text-align:center;
+	box-shadow: 0px 2px 15px 5px #aaa;
+}
+
+/* コンテンツエリア */
+div#contents{
+	max-width:1080px;
+	min-width:420px;
+	padding:20px;
+	margin:0 auto;
+}
+
+/* グリッドのコンテナー */
+div#container {
+	margin:0 auto;
+}
+
+/* グリッドのボックス */
+div.box {
+	margin:4px;
+	width:200px;
+	border:1px solid #ccc;
+	background: #fff;
+
+	/* ボックスを角丸にする */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	/* ボックスにドロップシャドウを追加する */
+	box-shadow: 0px 2px 5px 1px #ccc;
+}
+
+/* 大きいボックス */
+div.box.w2 {
+	width:410px;
+	position: relative;
+}
+
+/* ボックス内の画像に表示される空白の対策 */
+div.box div.thumb {
+	line-height:0; 
+}
+
+/* ボックス内の画像 */
+div.box div.thumb img {
+	border:none;
+
+	/* 画像右上・左上を、ボックスに合わせて角丸にする */
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+/* 大きいボックスの画像ファイル */
+div.box.w2 div.thumb img {
+
+	/* ボックスに合わせて角丸にする */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+/* ボックス内のヘッダー */
+div.box h3 {
+	margin:0;
+	padding:3px 5px;
+	background:#ffdf14;
+	color:#402000;
+}
+
+/* 大きいボックスの画像キャプション */
+div.box.w2 h3 {
+	position: absolute;
+	bottom:0;
+	margin:0;
+	width:390px;
+	padding:6px 10px;
+	background:#000;
+	color:#ffdf14;
+	opacity:0.7;
+
+	/* キャプションの右下・左下を、ボックスに合わせて角丸にする */
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+
+}
+
+/* ボックス内文章 */
+div.box p {
+	margin:5px;
+	padding:5px;
+}
+
+.hidden {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+
+
+/* ----------------------------------------------------------------------------------------------------
+
+	リセット
+
+---------------------------------------------------------------------------------------------------- */
+body,div,
+ul,ol,li,
+h1,h2,h3 {
+	margin: 0;
+	padding:0;
+}
+ul,ol,li {
+	list-style: none;
+}
+img {
+	border:0;
+}
+h1,h2,h3 {
+	font-weight:normal;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------
+
+	全ページ共有デザイン
+
+---------------------------------------------------------------------------------------------------- */
+body {
+	color: #FFF;
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	line-height: 1.4em;
+	text-align: center;
+	word-wrap: break-word;
+	/**/
+	background: #333 url(../images/bg_grid.gif) repeat;
+}
+a		{	color:#FFCC00;}
+a:hover {	text-decoration: none;}
+
+
+#header,
+#topicPath,
+#contents,
+#footer {
+	width: 100%;
+	clear:both;
+}
+.inner {
+	width: 950px;
+	margin: 0 auto;
+	text-align: left;
+	overflow: hidden;
+}
+
+
+
+/* ヘッダー */
+#header {
+	height: 100px;
+	background: #000;
+	border-bottom: 1px solid #FFF;
+}
+
+
+
+/* グローバルナビ */
+#gnav {
+	float: right;
+	width: 480px;
+}
+#gnav ul,
+#gnav li {
+	height: 100px;
+	text-align: center;
+}
+#gnav li {
+	width: 120px;
+	float: left;
+}
+		#gnav li a {
+			color: #FFF;
+			text-decoration: none;
+			padding: 39px 0;
+			display: block;
+		}
+		#gnav li a.active,
+		#gnav li a:hover {
+			background: #333333;
+			font-weight: bold;
+		}
+
+
+
+/* トピックスパス */
+#topicPath {
+	font-size: medium;
+	background: #222222;
+	margin-bottom: 50px;
+	padding: 12px 0;
+	border-bottom: 1px solid #FFF;
+}
+#topicPath a			{	color: #FFF;	text-decoration: none;}	
+#topicPath a:hover		{	text-decoration: underline;}
+#topicPath strong		{	color:#FFCC00;}
+
+
+
+/* コンテンツ */
+#contents {
+	margin-bottom: 100px;
+}
+
+
+
+/* フッター */
+#footer {
+	background: #000;
+	padding: 10px 0;
+	border-top: 1px solid #FFF;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------
+
+	全ページ共有テキスト装飾
+
+---------------------------------------------------------------------------------------------------- */
+h1 {
+	width: 300px;
+	height: 100px;
+	padding-top: 1.2em;
+	float: left;
+}
+		h1 a {
+			color: #FFF;
+			text-decoration: none;
+		}
+		h1 a:hover {
+			color: #FFCC00;
+		}
+		
+h2 {
+	font-size: xx-large;
+	line-height: 1.2em;
+	border-top: 5px solid #FFCC00;
+	border-bottom: 1px solid #000;
+	margin-bottom: 30px;
+	padding: 30px 0;
+}
+h3 {
+	font-size: xx-large;
+	color: #FFCC00;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------
+
+	ギャラリーページ
+
+---------------------------------------------------------------------------------------------------- */
+#gallery {
+	margin-bottom: 50px;
+}
+		.galleryArchive ul {
+			overflow: hidden;
+		}
+		.galleryArchive li {
+			float: left;
+			margin-right: 25px;
+		}
+		.galleryArchive a {
+			color: #FFFFFF;
+		}
+
+
+
+
+
+

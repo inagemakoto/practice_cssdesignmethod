@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* -----------------------------------------------------------
+reset
+----------------------------------------------------------- */
+body,div,h1,h2,h3,h4,p{
+	margin:0;padding:0;
+}
+img{ border:0;}
+a:hover img{
+	filter: alpha(opacity=80);
+	-moz-opacity:0.8;
+	opacity:0.8;
+}
+h1,h2{
+	font-weight:normal;
+}
+li{
+	list-style:none;
+}
+/*----------------------------------------------------
+style
+--------------------------------------------------*/
+body {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 80%;
+	border-top: #FFC4B0 3px solid;
+	background: url(../images/bg_head.gif) repeat-x center top;
+	background-color: #FEF6E9;
+	color: #254152;
+}
+.header{
+	height: 489px;
+	background: url(../images/img_main.jpg) no-repeat center 59px;
+}
+.header .wrap{
+	width: 962px;
+	position: relative;
+	margin: auto;
+}
+.header .wrap h1{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.header .wrap h1 a:hover img{
+	filter: alpha(opacity=100);
+	-moz-opacity:1.0;
+	opacity:1.0;
+}
+.header .wrap ul{
+	position:absolute;
+	top:15px;
+	right: 0;
+}
+.header .wrap ul li{
+	float:left;
+	margin:0 20px 0 0;
+}
+.contents{
+	width: 962px;
+	margin: auto;
+}
+.menu{
+	float: right;
+	width: 226px;
+	background-color: #254152;
+	padding: 23px 18px;
+	color: #fff;
+}
+.menu h2{
+	border-bottom: 1px solid #FFD3C4;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+.menu h2 img{
+	margin: 0 auto 10px;
+}
+.menu .section{
+	overflow: hidden;
+	width: 216px;
+	margin: 0 0 10px 0;
+}
+.menu h3{
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.8);
+	margin: 0 0 10px 0;
+	border-bottom: #fff dotted 1px;
+}
+.menu h3:first-letter{
+	color: #FFD3C4;
+	font-size: 200%;
+}
+.menu .section .l_box{
+	float: left;
+}
+.menu .section .r_box{
+	float: right;
+}
+.menu .text_box{
+	width: 84px;
+}
+/*下記はCSS3のやり方　これを記述するとtext_boxの指定はいらない*/
+/*.menu .section:nth-child(odd) .l_box{
+	width: 84px;
+}
+.menu .section:nth-child(even) .r_box{
+	width: 84px;
+}*/
+.menu .section p{
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.8);
+}
+.menu .section img{
+}
+.menu .section img:hover{
+	transform: translate(10px,10px) rotate(10deg);
+	-webkit-transform:translate(10px,10px) rotate(10deg);
+}
+.footer{
+	background-color: #254152;
+	padding: 10px 0;
+	clear:both;
+	color: #FFC4B0;
+	text-align:center;
+}
+.footer p{
+	margin: auto;
+}
+/*ギャラリー箇所*/
+.gallery {
+	margin:0;
+	max-width: 700px;
+	background: #3A95A8;
+}
+.gallery div{
+	height:254px;
+	/*float: left;CSSのみでも制御できます*/
+}
+.gallery img{
+	width: 100%;
+	height: 100%;
+}
+.gallery a:hover img{
+	width: 100%;
+	height: 100%;
+}
+.gallery h3{
+	width: 154px;
+	height: 54px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 0 0 20px;
+}
+.tit_01{
+	background: url(../images/box_tit.gif) no-repeat left top;
+}
+.tit_02{
+	background: url(../images/box_tit_02.gif) no-repeat left top;
+}
+.gallery h4{
+	border-bottom: 1px #D6D6D6 solid;
+	margin: 0 0 10px;
+	padding:0 0 5px;
+}
+
+/*この箇所が無くてもタイル状にならびます*/
+.gallery .box_01{
+	width:200px;
+}
+.gallery .box_02{
+	width:300px;
+}
+.gallery .box_03{
+	width:300px;
+	height:508px;
+}
+.gallery .box_04{
+	width:400px;
+}
+
+/*テキストボックスの指定ここは上のタイルの設定より下に記述してください*/
+.gallery .text_box_01,.gallery .text_box_02{
+	padding:20px;
+	width: 160px;
+ height:214px;
+}
+.gallery .text_box_01{
+	background-color: #fff;
+}
+.gallery .text_box_02{
+	background-color: #3A95A8;
+	color: #fff;
+}

@@ -1,0 +1,123 @@
+/* レイアウト */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    min-width: 767px;
+    max-width: 980px;
+    margin: auto;
+    *zoom: 1;
+    background: transparent url(../img/memu_bg.png) repeat-y 0 0;
+}
+
+#wrapper:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.page-title{
+    margin: 0;
+    font-family: serif;
+}
+
+#navigation{
+    float: left;
+    width: 20%;
+}
+
+.nav{
+    width: 180px;
+}
+
+.nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav li{
+    border-bottom: 1px solid #fff;
+}
+
+.nav a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 0.5em;
+    border-bottom: 1px solid #e6dbd2;
+}
+
+#main{
+    float: right;
+    width: 78%;
+}
+
+.contents-item{
+    border-top: 1px solid #000;
+    *zoom: 1;
+}
+
+.contents-item:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contents-title{
+    float: left;
+    margin: 0;
+    color: #ba9c62;
+}
+
+.contents-image{
+    float: right;
+    margin: 0 0 1em;
+}
+
+/* モバイル向け開閉ボタン */
+#mobile-header {
+    display: none;
+    background-color: #eae36f;
+    padding: 0.2em;
+    padding: 0.2rem;
+}
+
+#responsive-menu-button{
+    display: inline-block;
+    padding: .2em 12px .2em .2em ;
+    padding: .2rem 12px .2rem .2rem;
+    background: transparent url(../img/menu_icon.png) no-repeat right center;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    color: #000;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px){
+    #wrapper{
+        min-width: 100%;
+        background: #FFF;
+    }
+    #navigation{
+        display: none;
+    }
+    #main{
+        float: none;
+        width: 100%;
+    }
+    #mobile-header {
+        display: block;
+    }
+    .contents-title,
+    .contents-image{
+        float: none;
+    }
+    .contents-image img{
+        width: 100%;
+        height: auto;
+        max-width: 436px;
+    }
+}

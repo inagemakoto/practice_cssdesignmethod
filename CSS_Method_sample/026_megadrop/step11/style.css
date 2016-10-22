@@ -1,0 +1,130 @@
+﻿@charset "utf-8";
+
+/* ------- base ------- */
+
+body, div, ul, li {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-color: #DFE0D1;
+	font-size: 62.5%;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color: #292623;
+}
+
+a {
+	text-decoration: none;
+	color: #292623;
+}
+
+/* ------- wrapper ------- */
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+/* ------- header ------- */
+
+#header {
+	height: 70px;
+}
+
+#header img {
+	margin-top: 25px;
+}
+
+/* ------- nav ------- */
+
+#nav {
+	width: 900px;
+	background: #FFFFFF;
+}
+
+#nav li {
+	list-style-type: none;
+}
+
+#nav > li {
+	position: relative;
+	float: left;
+	width: 150px;
+}
+
+#nav > li > a {
+	display: block;
+	padding: 23px 0 23px 0;
+	background: #FFFFFF;
+	border-right: 1px solid #C2C5A9;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 1.8em;
+	line-height: 1;
+	text-align: center;
+}
+
+#nav > li:hover > a {
+	background: #4F4944;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+#nav .subs {
+	visibility: hidden;
+	position: absolute;
+	width: 760px;
+	top: 100%;
+	left: 0;
+	padding: 15px;
+	background: url("images/arrow.png") no-repeat 66px 0 #797168;
+}
+
+#nav > li:hover .subs {
+	visibility: visible;
+}
+
+#nav .subs > li {
+	float: left;
+	width: 190px;
+}
+
+#nav .subs li span {
+	font-size: 2.0em;
+	color: #FFFFFF;
+}
+
+#nav .subs li {
+	padding-top: 5px;
+}
+
+#nav .subs li a {
+	display: block;
+	border-left: 6px solid #4F4944;
+	padding: 13px 0 13px 0;
+	font-size: 1.4em;
+	line-height: 1;
+	text-indent: 12px;
+	color: #FFFFFF;
+}
+
+#nav .subs li a:hover {
+	border-left: 12px solid #BCB8B4;
+	background: #FFFFFF;
+	color: #797168;
+	font-weight: bold;
+}
+
+/* ------- サブメニューの幅の指定 ------- */
+
+#nav .col4 {
+	width: 760px;
+}
+
+#nav .col3 {
+	width: 570px;
+}
+
+#nav .col1 {
+	width: 190px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<title>MdN tableware</title>
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			$("#contents div").hide();
+			$($("#tab a.selected").attr("href")).show();
+			$("#tab li a").click(function () {
+				$("#tab li a").removeClass();
+				$(this).addClass("selected");
+				$("#contents div").hide();
+				$($(this).attr("href")).fadeIn();
+				return false;
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div id="header-inner" class="clearfix">
+			<div id="logo">
+				<img src="images/logo.png" alt="MdN tableware" />
+			</div>
+			<ul id="nav">
+				<li><a href="test.html"><img src="images/menu1.png" alt="和食器" /></a></li>
+				<li><a href="test.html"><img src="images/menu2.png" alt="洋食器" /></a></li>
+				<li><a href="test.html"><img src="images/menu3.png" alt="ガラス食器" /></a></li>
+			</ul>
+		</div>
+		
+		<!--タブ-->
+		 <ul id="tab">
+			<li><a class="selected" href="#tab1">湯呑み</a></li>
+			<li><a href="#tab2">急須</a></li>
+			<li><a href="#tab3">小鉢</a></li>
+		</ul>
+	</div>
+	<!--コンテンツ-->
+	<div id="contents">
+		<div id="tab1">
+			<h1>YUNOMI</h1>
+			<img src="images/yunomi.jpg" alt="湯呑み画像" />
+			<p>モダンでおしゃれな食器です。和風で洗練された美しさがあります。シンプルなフォルムとマットな質感で贈り物にもおすすめです。モダンでおしゃれな食器です。和風で洗練された美しさがあります。</p>
+		</div>
+		<div id="tab2">
+			<h1>KYUSU</h1>
+			<img src="images/kyusu.jpg" alt="急須画像" />
+			<p>モダンでおしゃれな食器です。和風で洗練された美しさがあります。シンプルなフォルムとマットな質感で贈り物にもおすすめです。モダンでおしゃれな食器です。和風で洗練された美しさがあります。</p>
+		</div>
+		<div id="tab3">
+			<h1>KOBACHI</h1>
+			<img src="images/kobachi.jpg" alt="小鉢画像" />
+			<p>モダンでおしゃれな食器です。和風で洗練された美しさがあります。シンプルなフォルムとマットな質感で贈り物にもおすすめです。モダンでおしゃれな食器です。和風で洗練された美しさがあります。</p>
+		</div>
+	</div>
+	<div id="footer">
+		Copyright © 2013 MdN tableware All Right Reserved. 
+	</div>
+</body>
+</html>

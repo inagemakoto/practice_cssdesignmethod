@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Grid Gallary #2 Sample</title>
+	<link href="assets/css/grid2.css" rel="stylesheet" type="text/css" media="all"/>
+	<script src="assets/js/jquery-1.10.2.min.js"></script>
+	<script src="assets/js/masonry.pkgd.min.js"></script>
+</head>
+<body>
+
+<div id="header">
+	<h1><a href="#" title="grid coffee"><span class="hidden">grid coffee</span></a></h1>
+</div>
+
+<div id="contents">
+
+	<div id="container">
+		<div class="box w2">
+			<a href="#">
+				<div class="thumb"><img src="./assets/img/pic01.jpg" width="410" height="410"></div>
+				<h3>「コーヒーの木」好評販売中</h3>
+			</a>
+		</div>
+		<div class="box">
+			<a href="#">
+				<div class="thumb"><img src="./assets/img/pic02.jpg" width="200" height="200"></div>
+				<h3>水出し紅茶始めました</h3>
+				<p>只今準備中の水で抽出する紅茶です。アッサムC.T.Cで試作したところ、さわやかな渋みのお味に仕上がりました。現在はディンブラB.O.Pで試作しています。</p>
+			</a>
+		</div>
+		<div class="box">
+			<a href="#">
+				<div class="thumb"><img src="./assets/img/pic03.jpg" width="200" height="200"></div>
+				<h3>３連休は３日間とも雨</h3>
+				<p>この３連休は３日間とも雨がふり、活動しにくかったですね。愚痴りたい気分はありますが、天気の事は地球の気分にまかせて、映画なんてみるのが、天変地異に影響されることなく楽しめる文化だと思います。</p>
+			</a>
+		</div>
+		<div class="box">
+			<a href="#">
+				<div class="thumb"><img src="./assets/img/pic04.jpg" width="200" height="200"></div>
+				<h3>茄子とチーズのトースト</h3>
+				<p>フードメニューに新メニューが追加されました。今が旬の茄子をふんだんに使った、オープンサンドコーヒーが美味しくのめる相性のよいオープンサンドです。
+ </p>
+			</a>
+		</div>
+		<div class="box">
+			<a href="#">
+				<div class="thumb"><img src="./assets/img/pic05_1.png" width="200" height="100"></div>
+				<div><img src="./assets/img/pic05_2.jpg" width="200" height="160"></div>
+				<p>今月のイチオシは、やっぱりアイスコーヒー。レモンコーヒーのソーダ割りもさっぱりしていてｵｽｽﾒです！ また、朝限定の「グッドモーニングサンド」も大人気です。</p>
+			</a>
+		</div>
+		<div class="box w2">
+			<a href="#">
+				<div class="thumb"><img src="./assets/img/pic06.jpg" width="410" height="410"></div>
+				<h3>ミルクチョコレート ￥450</h3>
+			</a>
+		</div>
+		<div class="box">
+			<a href="#">
+				<div class="thumb"><img src="./assets/img/pic07.jpg" width="200" height="200"></div>
+				<h3>チョコバナナマフィン</h3>
+				<p>マフィンの中に、バナナの入ったマフィンが出来上がりました。焼きたてのマフィンと、水出しアイスコーヒーの相性は抜群です。
+ </p>
+			</a>
+		</div>
+		
+		<div class="box">
+			<a href="#">
+				<div class="thumb"><img src="./assets/img/pic08.png" width="200" height="50"></div>
+				<p>8月23日に吉田公園の「ふれあいフェスティバル2013」に、出張コーヒーショップをオープンします。当日は暑くなると思いますので、ぜひアイスコーヒーを飲んで一息なさってください。</p>
+			</a>
+		</div>
+		<div class="box">
+			<a href="#">
+				<div class="thumb"><img src="./assets/img/pic09_1.png" width="200" height="50"></div>
+				<div><img src="./assets/img/pic09_2.jpg" width="200" height="120"></div>
+				<p>営業時間：10:00～19:00</p>
+				<p>定休日：月曜日</p>
+				<p>所在地：○○○○○○ 2F</p>
+				<p>電話番号：XXX-XXXX-XXXX</p>
+			</a>
+		</div>
+	</div>
+
+</div>
+
+<div id="footer">
+	<p id="copyright">&copy; Grid Coffee</p>
+</div>
+
+<script>
+  $.event.add(window, "load", function(){
+
+  	//可変グリッド実行
+    $('#container').masonry({
+      itemSelector: '.box',	//グリッドのパーツとなる要素
+      columnWidth: 210, 	//カラムの幅を設定
+      isAnimated: true,		//レイアウトを変更する際アニメーションをする
+      isFitWidth: true 		//#containerの幅に合わせる
+    });
+
+    //アンカーのロールオーバー
+    $('a').parent().hover(function(){
+		$(this).fadeTo("fast", 0.7);
+	},function(){
+		$(this).fadeTo("fast", 1);
+	});
+  });
+</script>
+
+</body>
+</html>
